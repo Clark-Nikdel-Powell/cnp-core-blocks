@@ -4,7 +4,7 @@ const { registerBlockType } = wp.blocks;
 import './style.scss';
 import './editor.scss';
 
-registerBlockType('cnp-core-blocks/speedbump', {
+registerBlockType('cnp/speedbump', {
 	title: 'Speedbump',
 	// icon: 'heart',
 	category: 'common',

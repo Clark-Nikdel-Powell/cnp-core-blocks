@@ -24,4 +24,4 @@ use CNP\Core\Blocks;
 define( 'CNP_CORE_BLOCKS_VERSION', '1.0.0' );
 
 $cnp_core_blocks = new Blocks();
-$cnp_core_blocks->add_block( 'cnp-core-blocks/speedbump' );
+$cnp_core_blocks->add_block( 'cnp/speedbump' );
