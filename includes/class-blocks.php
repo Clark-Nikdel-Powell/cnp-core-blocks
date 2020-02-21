@@ -81,7 +81,7 @@ class Blocks {
 		// Register block script.
 		wp_register_script(
 			$this->editor_script,
-			plugins_url( '/blocks/dist/blocks.build.js', __FILE__ ),
+			plugins_url( '/blocks/dist/blocks.build.js', CNP_CORE_BLOCKS_PATH ),
 			array( 'wp-blocks', 'wp-element', 'wp-editor' ),
 			$this->version,
 			true
@@ -90,10 +90,10 @@ class Blocks {
 		// Register block CSS.
 		wp_register_style(
 			$this->style,
-			plugins_url( '/blocks/dist/blocks.style.build.css', __FILE__ ),
-			array( 'wp-blocks' ),
+			plugins_url( '/blocks/dist/blocks.style.build.css', CNP_CORE_BLOCKS_PATH ),
+			null,
 			$this->version,
-			true
+			'all'
 		);
 
 		// Register block edit CSS.
@@ -101,10 +101,10 @@ class Blocks {
 
 			wp_register_style(
 				$this->editor_style,
-				plugins_url( '/blocks/dist/blocks.editor.build.css', __FILE__ ),
+				plugins_url( '/blocks/dist/blocks.editor.build.css', CNP_CORE_BLOCKS_PATH ),
 				array( 'wp-edit-blocks' ),
 				$this->version,
-				true
+				'all'
 			);
 
 		}
